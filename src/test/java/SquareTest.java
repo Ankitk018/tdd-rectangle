@@ -15,14 +15,14 @@ public class SquareTest {
     }
 
     @Test
-    public void shouldThrowAnIllegealArgumentExceptionForNegativeValueOfSide(){
+    public void shouldThrowAnIllegalArgumentExceptionForNegativeValueOfSide(){
 
         assertThrows(IllegalArgumentException.class, () -> new Square(-4) );
     }
 
     @Test
 
-    public void shouldThrowAnIllegealArgumentExceptionForZeroValueOfSide(){
+    public void shouldThrowAnIllegalArgumentExceptionForZeroValueOfSide(){
 
         assertThrows(IllegalArgumentException.class, () -> new Square(0) );
     }
