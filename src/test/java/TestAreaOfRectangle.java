@@ -15,20 +15,20 @@ public class TestAreaOfRectangle {
 
     @Test
     public void testAreaForNegativeLength(){
-        Rectangle rectangle = new Rectangle(-4, 5);
-        assertThrows(IllegalArgumentException.class, () -> rectangle.calculateArea());
+
+        assertThrows(IllegalArgumentException.class, () -> new Rectangle(-4, 5));
     }
 
     @Test
     public void testAreaForNegativeWidth(){
-        Rectangle rectangle = new Rectangle(4, -5);
-        assertThrows(IllegalArgumentException.class, () -> rectangle.calculateArea());
+
+        assertThrows(IllegalArgumentException.class, () -> new Rectangle(4, -5));
     }
 
     @Test
     public void testAreaForNegativeLengthAndWidth(){
-        Rectangle rectangle = new Rectangle(-4, -5);
-        assertThrows(IllegalArgumentException.class, () -> rectangle.calculateArea());
+
+        assertThrows(IllegalArgumentException.class, () -> new Rectangle(-4, -5));
     }
 
     @Test
